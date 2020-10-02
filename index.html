@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Form</h1>
+    <form onsubmit="alert('Submitted successfully!');return false">
+        <label for="user_name"></label>
+        <input type="text" id="user_name" placeholder="Username" pattern="[a-zA-Z\d\.]{5,10}" required>
+        <p>Username should contain only alphabets/digits/. and length 5-10</p><br>
+        <label for="mail_id"></label>
+        <input type="email" id="mail_id" placeholder="Email" pattern="((^[a-z]+[\.]*[0-9]*)@([\w]+)([\.])([a-z]{2,3}$))" required>
+        <p>Email must be a valid email eg. xyz@gmail.com</p><br>
+        <label for="pass"></label>
+        <input type="password" id="pass" placeholder="Password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[a-zA-Z0-9_#@%\*\-]{8,32}$" required>
+        <p>Password must contain (8-32) characters with at least one alphanumeric<br> character,one digit,one uppercase letter and one lowercase letter </p><br>
+        <label for="num"></label>
+        <input type="text" id="num" placeholder="Phone number" pattern="\d{10}" required>
+        <p>Phone number must be a valid phone number of 10 digits</p>
+        <input type="submit" value="SUBMIT" size="50">
+        <input type="reset" value="RESET">
+    </form>
+</body>
+</html>
