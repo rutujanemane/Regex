@@ -1,2 +1,2 @@
 # Regex
-Just for Regex practice!
+Just for exploring Regex!
